@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="Prefix">
+    <file>atom.png</file>
+    <file>Add_File.png</file>
+    <file>Radiation.png</file>
+    <file>Close.png</file>
+    <file>compiile.png</file>
+    <file>Copy.png</file>
+    <file>Cut.png</file>
+    <file>Find.png</file>
+    <file>Folder.png</file>
+    <file>help.png</file>
+    <file>Info.png</file>
+    <file>Paste.png</file>
+    <file>Q_t.png</file>
+    <file>Quit.png</file>
+    <file>Redo.png</file>
+    <file>Run.png</file>
+    <file>Save.png</file>
+    <file>Save_as.png</file>
+    <file>Select_All.png</file>
+    <file>Trash.png</file>
+    <file>Undo.png</file>
+  </qresource>
+</RCC>

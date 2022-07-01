@@ -1,0 +1,29 @@
+{
+   "Data": 
+   { 
+      "Parameters": 
+      { 
+         "ID": 100,
+         "Calculation Mode": "Forward",
+         "Dimensions": 1,
+         "Number of X-Assembly": 2,
+         "Number of Y-Assembly": 2,
+         "Number of Z-Assembly": 2,
+         "X-Assembly Size": [1, 1],
+         "Y-Assembly Size": [1, 1],
+         "Z-Assembly Size": [1, 1],
+         "Number of Planar": 1,
+         "Planar Assignement to Z": [1, 1]
+      }, 
+      "Materials": 
+      [
+      "Assemblies": 
+      [{ 
+         "ID": 1, 
+         "Name": "Planar 1",
+         "Assembly": [[1, 1], [1, 1]]
+       }],
+      "XY_Assembly": [[[1, 1], [1, 1]]],
+      "Z_Assembly": [[[1, 1], [1, 1]]],
+   } 
+}

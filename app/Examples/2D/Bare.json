@@ -1,0 +1,58 @@
+{
+   "Data": 
+   { 
+      "Parameters": 
+      { 
+         "ID": 100,
+         "Calculation Mode": "Forward",
+         "Number of Energy Groups": 2,
+         "Number of Materials": 1,
+         "Polynomial Order": 4,
+         "Dimensions": 2,
+         "Number of X-Assembly": 2,
+         "Number of Y-Assembly": 2,
+         "Number of Z-Assembly": 1,
+         "X-Assembly Division": [1,1],
+         "Y-Assembly Division": [1,1],
+         "Z-Assembly Division": [1],
+         "X-Assembly Size": [10,20],
+         "Y-Assembly Size": [20,10],
+         "Z-Assembly Size": [20],
+         "Number of Planar": 1,
+         "Planar Assignement to Z": [1]
+      }, 
+      "Materials": 
+      [{ 
+         "ID": 1, 
+        "Name": "Core",
+        "Absorption_XS": [0.00855, 0.0663],
+        "Transport_XS": [0.2351, 0.8927],
+        "Fission_XS": [0.0022, 0.0429],
+        "Nu*Fission_XS": [0.00536, 0.10433],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.0, 0.01742],
+                         [0.0, 0.0]]
+       }],
+      "Assemblies": 
+      [{ 
+         "ID": 1, 
+         "Name": "Planar 1",
+         "Assembly":  [[1,1],
+                       [1,1]]
+       }],
+      "XY_Assembly": [[[1,1],
+                       [1,1]]],
+      "Z_Assembly": [[1,1]],
+
+      "Boundary Condition": 
+      { 
+         "X_East": 0,
+         "X_West": 2,
+         "Y_North": 2,
+         "Y_South": 0,
+         "Z_Top": 2,
+         "Z_Bottom": 2
+      }
+   } 
+}
+

@@ -1,0 +1,101 @@
+{
+   "Data": 
+   { 
+      "Parameters": 
+      { 
+         "ID": 100,
+         "Calculation Mode": "Forward",
+         "Number of Energy Groups": 2,
+         "Number of Materials": 4,
+         "Polynomial Order": 4,
+         "Dimensions": 2,
+         "Number of X-Assembly": 9,
+         "Number of Y-Assembly": 9,
+         "Number of Z-Assembly": 1,
+         "X-Assembly Division": [2,4,4,4,4,4,4,4,4],
+         "Y-Assembly Division": [4,4,4,4,4,4,4,4,2],
+         "Z-Assembly Division": [1],
+         "X-Assembly Size": [10,20,20,20,20,20,20,20,20],
+         "Y-Assembly Size": [20,20,20,20,20,20,20,20,10],
+         "Z-Assembly Size": [20],
+         "Number of Planar": 1,
+         "Planar Assignement to Z": [1]
+      }, 
+      "Materials": 
+      [{ 
+         "ID": 1, 
+        "Name": "Outer_Fuel",
+        "Absorption_XS": [0.010120, 0.080032],
+        "Transport_XS": [0.222222, 0.833333],
+        "Fission_XS": [0.000, 0.135],
+        "Nu*Fission_XS": [0.000, 0.135],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.0, 0.020], [0.000, 0.0]]
+       },
+       { 
+         "ID": 2, 
+        "Name": "Inner_Fuel",
+        "Absorption_XS": [0.010120, 0.085032],
+        "Transport_XS": [0.222222, 0.833333],
+        "Fission_XS": [0.000, 0.135],
+        "Nu*Fission_XS": [0.000, 0.135],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.0, 0.020], [0.000, 0.0]]
+       },
+       { 
+         "ID": 3, 
+        "Name": "Inner_Fuel_+_Control_Rod",
+        "Absorption_XS": [0.010120, 0.130032],
+        "Transport_XS": [0.222222, 0.833333],
+        "Fission_XS": [0.000, 0.135],
+        "Nu*Fission_XS": [0.000, 0.135],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.0, 0.020], [0.000, 0.0]]
+       },
+       { 
+        "ID": 4, 
+        "Name": "Reflector",
+        "Absorption_XS": [0.000160, 0.010024],
+        "Transport_XS": [0.166667, 1.111111],
+        "Fission_XS": [0.000, 0.000],
+        "Nu*Fission_XS": [0.000, 0.000],
+        "Chi": [0.0, 0.0],
+        "Scattering_XS":[[0.0, 0.040], [0.000, 0.0]]
+       }],
+      "Assemblies": 
+      [{ 
+         "ID": 1, 
+         "Name": "Planar 1",
+         "Assembly": [[4,4,4,4,0,0,0,0,0],
+                      [1,1,1,4,4,4,0,0,0],
+                      [2,2,1,1,1,4,4,0,0],
+                      [2,2,2,2,1,1,4,4,0],
+                      [3,2,2,2,3,1,1,4,0],
+                      [2,2,2,2,2,2,1,4,4],
+                      [2,2,2,2,2,2,1,1,4],
+                      [2,2,2,2,2,2,2,1,4],
+                      [3,2,2,2,3,2,2,1,4]]
+       }],
+      "XY_Assembly": [[[4,4,4,4,0,0,0,0,0],
+                       [1,1,1,4,4,4,0,0,0],
+                       [2,2,1,1,1,4,4,0,0],
+                       [2,2,2,2,1,1,4,4,0],
+                       [3,2,2,2,3,1,1,4,0],
+                       [2,2,2,2,2,2,1,4,4],
+                       [2,2,2,2,2,2,1,1,4],
+                       [2,2,2,2,2,2,2,1,4],
+                       [3,2,2,2,3,2,2,1,4]]],
+      "Z_Assembly": [[3,2,2,2,3,2,2,1,4]],
+
+      "Boundary Condition": 
+      { 
+         "X_East": 1,
+         "X_West": 2,
+         "Y_North": 2,
+         "Y_South": 1,
+         "Z_Top": 2,
+         "Z_Bottom": 2
+      }
+   } 
+}
+
