@@ -1,0 +1,8 @@
+   1  git init
+   2  git config --global user.name "Hicham Satti"
+   3  git config --global user.gmail "sattihicham@gmail.com"
+   4  git remote add origin https://github.com/HichamSatti/OpenNode.git
+   5  git add .
+   6  git commit -m "initial commit"
+   7  git log
+   8  git push origin master
