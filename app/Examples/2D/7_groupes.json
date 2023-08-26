@@ -1,0 +1,71 @@
+{
+   "Data": 
+   { 
+      "Parameters": 
+      { 
+         "ID": 100,
+         "Calculation Mode": "Forward",
+         "Number of Energy Groups": 7,
+         "Number of Materials": 1,
+         "Polynomial Order": 4,
+         "Dimensions": 2,
+         "Number of X-Assembly": 3,
+         "Number of Y-Assembly": 9,
+         "Number of Z-Assembly": 1,
+         "X-Assembly Division": [1,1,1],
+         "Y-Assembly Division": [1,1,1,1,1,1,1,1,1],
+         "Z-Assembly Division": [1],
+         "X-Assembly Size": [4.5,4.5,4.5],
+         "Y-Assembly Size": [7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5],
+         "Z-Assembly Size": [1],
+         "Number of Planar": 1,
+         "Planar Assignement to Z": [1]
+      }, 
+      "Materials": 
+      [{ 
+         "ID": 1, 
+        "Name": "Inner_Core",
+        "Absorption_XS": [0.01, 0.02, 0.03, 0.10, 0.05, 0.07, 0.09],
+        "Transport_XS": [0.208, 0.238,
+                         0.277, 0.333, 
+                         0.416, 0.555, 
+                         0.833],
+        "Fission_XS": [0.008, 0.004, 
+                       0.008, 0.016, 
+                       0.041, 0.049, 
+                       0.061],
+        "Nu*Fission_XS": [0.02, 0.01, 0.02, 0.04, 0.10, 0.12, 0.15],
+        "Chi": [0.9, 0.09, 0.01, 0.0, 0.0, 0.0, 0.0],
+        "Scattering_XS":[[0.0, 0.015, 0.01, 0.01, 0.005, 0.0, 0.0],
+                         [0.0, 0.0, 0.02, 0.02, 0.01, 0.01, 0.0],
+                         [0.0, 0.0, 0.0, 0.02, 0.02, 0.01, 0.1],
+                         [0.0, 0.0, 0.0, 0.0, 0.03, 0.02, 0.01],
+                         [0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.03],
+                         [0.0, 0.0, 0.0, 0.0, 0.02, 0.0, 0.08],
+                         [0.0, 0.0, 0.0, 0.0, 0.02, 0.06, 0.0]]
+       }],
+      "Assemblies": 
+      [{ 
+         "ID": 1, 
+         "Name": "Planar 1",
+         "Assembly":  [[1,1,1,1,1,1,1,1,1],
+                       [1,1,1,1,1,1,1,1,1],
+                       [1,1,1,1,1,1,1,1,1]]
+       }],
+      "XY_Assembly": [[[1,1,1,1,1,1,1,1,1],
+                       [1,1,1,1,1,1,1,1,1],
+                       [1,1,1,1,1,1,1,1,1]]],
+      "Z_Assembly":   [[1,1,1,1,1,1,1,1,1]],
+
+      "Boundary Condition": 
+      { 
+         "X_East": 0,
+         "X_West": 2,
+         "Y_North": 2,
+         "Y_South": 0,
+         "Z_Top": 2,
+         "Z_Bottom": 2
+      }
+   } 
+}
+

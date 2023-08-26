@@ -1,0 +1,113 @@
+{
+   "Data": 
+   { 
+      "Parameters": 
+      { 
+         "ID": 100,
+         "Calculation Mode": "Fixed Source",
+         "Number of Energy Groups": 2,
+         "Number of Materials": 3,
+         "Polynomial Order": 4,
+         "Dimensions": 2,
+         "Number of X-Assembly": 2,
+         "Number of Y-Assembly": 2,
+         "Number of Z-Assembly": 1,
+         "X-Assembly Division": [1,1],
+         "Y-Assembly Division": [1,1],
+         "Z-Assembly Division": [1],
+         "X-Assembly Size": [21, 21],
+         "Y-Assembly Size": [21, 21],
+         "Z-Assembly Size": [42],
+         "Number of Planar": 1,
+         "Planar Assignement to Z": [1]
+      }, 
+      "Materials": 
+      [{ 
+         "ID": 1, 
+        "Name": "Inner_Core",
+        "Absorption_XS": [0.017864, 0.21535 ],
+        "Transport_XS": [0.22646466018977737, 0.8542408788430161],
+        "Fission_XS": [0.00241128, 0.091648],
+        "Nu*Fission_XS": [0.0060282, 0.0053252],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.0, 0.018824],
+                         [0.0, 0.0]]
+       },
+       { 
+         "ID": 2, 
+        "Name": "Outer_Core",
+        "Absorption_XS": [0.009325, 0.14157],
+        "Transport_XS": [0.22002200220022003, 0.8423890152472412],
+        "Fission_XS": [0.0018498, 0.065932],
+        "Nu*Fission_XS": [0.011878, 0.0053252],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.0, 0.021126],
+                         [0.0, 0.0]]
+       },
+       { 
+         "ID": 3, 
+        "Name": "Radial_Blanket",
+        "Absorption_XS": [0.009325, 0.14157],
+        "Transport_XS": [0.22002200220022003, 0.8423890152472412],
+        "Fission_XS": [0.0018498, 0.065932],
+        "Nu*Fission_XS": [0.011878, 0.0053252],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.0, 0.021126],
+                         [0.0, 0.0]]
+       }],
+      "Assemblies": 
+      [{ 
+         "ID": 1, 
+         "Name": "Planar 1",
+         "Assembly": [[2,3],
+                      [1,2]]                  
+       }],
+      "XY_Assembly": [[[2,3],
+                       [1,2]]],
+      "Z_Assembly": [[2,3],
+                     [1,2]],
+      "Boundary Condition": 
+      { 
+         "X_East": 0,
+         "X_West": 2,
+         "Y_North": 2,
+         "Y_South": 0,
+         "Z_Top": 2,
+         "Z_Bottom": 2
+      },
+      "Fixed Source Parameters": 
+      { 
+         "Source Number": 3,
+         "Radial FS Number": 2,
+         "Axial FS Number": 1,
+      "Source Parameters": 
+      [{ 
+         "ID": 1, 
+        "Name": "Source 1",
+      "Source Density": [1736.79000],
+        "Source Energy Spectrum": [1, 0],
+        "Radial FS Position (x)": [1, 0],
+        "Radial FS Position (y)": [2, 0],
+        "Axial FS Position":[1]
+       },
+       { 
+         "ID": 2, 
+        "Name": "Source 2",
+        "Source Density": [1700.58000],
+        "Source Energy Spectrum": [1, 0],
+        "Radial FS Position (x)": [1, 2],
+        "Radial FS Position (y)": [1, 2],
+        "Axial FS Position":[1]
+       },
+       { 
+         "ID": 3, 
+        "Name": "Source 3",
+        "Source Density": [929.47700],
+        "Source Energy Spectrum": [1, 0],
+        "Radial FS Position (x)": [2, 0],
+        "Radial FS Position (y)": [1, 0],
+        "Axial FS Position":[1]
+       }]
+      }
+   } 
+}

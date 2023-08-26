@@ -1,0 +1,77 @@
+{
+   "Data": 
+   { 
+      "Parameters": 
+      { 
+         "ID": 100,
+         "Calculation Mode": "Forward",
+         "Number of Energy Groups": 2,
+         "Number of Materials": 2,
+         "Polynomial Order": 4,
+         "Dimensions": 2,
+         "Number of X-Assembly": 6,
+         "Number of Y-Assembly": 6,
+         "Number of Z-Assembly": 1,
+         "X-Assembly Division": [1,1,1,1,1,1],
+         "Y-Assembly Division": [1,1,1,1,1,1],
+         "Z-Assembly Division": [1],
+         "X-Assembly Size": [1.0,1.6,1.6,1.6,1.6,1.5],
+         "Y-Assembly Size": [1.5,1.6,1.6,1.6,1.6,1.0],
+         "Z-Assembly Size": [1.5],
+         "Number of Planar": 1,
+         "Planar Assignement to Z": [1]
+      }, 
+      "Materials": 
+      [{ 
+         "ID": 1, 
+        "Name": "Fuel",
+        "Absorption_XS": [0.008627, 0.06957],
+        "Transport_XS": [0.196647, 0.596159],
+        "Fission_XS": [0.0022, 0.0429],
+        "Nu*Fission_XS": [0.006203, 0.1101],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.178, 0.01002],
+                         [0.001089, 0.5255]]
+       },
+       { 
+         "ID": 2, 
+        "Name": "Water",
+        "Absorption_XS": [0.000684, 0.008016],
+        "Transport_XS": [0.222064, 0.887874],
+        "Fission_XS": [0.0022, 0.0429],
+        "Nu*Fission_XS": [0, 0],
+        "Chi": [1.0, 0.0],
+        "Scattering_XS":[[0.1995, 0.02188],
+                         [0.001558, 0.8783]]
+       }],
+      "Assemblies": 
+      [{ 
+         "ID": 1, 
+         "Name": "Planar 1",
+         "Assembly":  [[2,2,2,2,2,2],
+                       [2,1,1,1,1,2],
+                       [2,1,1,1,1,2],
+                       [2,1,1,1,1,2],
+                       [2,1,1,1,1,2],
+                       [2,2,2,2,2,2]]
+       }],
+      "XY_Assembly": [[[2,2,2,2,2,2],
+                       [2,1,1,1,1,2],
+                       [2,1,1,1,1,2],
+                       [2,1,1,1,1,2],
+                       [2,1,1,1,1,2],
+                       [2,2,2,2,2,2]]],
+      "Z_Assembly": [[2,1,1,1,1,2]],
+
+      "Boundary Condition": 
+      { 
+         "X_East": 0,
+         "X_West": 0,
+         "Y_North": 0,
+         "Y_South": 0,
+         "Z_Top": 2,
+         "Z_Bottom": 2
+      }
+   } 
+}
+
