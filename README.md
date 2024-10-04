@@ -10,7 +10,7 @@ Install on Windows:
 ===================
 If you are using Windows 10, install OpenNode with the following commands:
 
-*Download Anaconda Distribution for Windows
+*Download Anaconda Distribution for Windows:
 https://www.anaconda.com/download/success
 
 *install gfortran:
@@ -23,9 +23,7 @@ https://www.blender.org/download/
 https://www.python.org/downloads/
 
 If you are using Windows 10, open the terminal Anaconda Prompt (Anaconda3):
-
 *Download PIP get-pip.py:
-
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
 *Install PIP on Windows:
