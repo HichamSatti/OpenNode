@@ -25,6 +25,7 @@ https://www.python.org/downloads/
 If you are using Windows 10, open the terminal Anaconda Prompt (Anaconda3):
 
 *Download PIP get-pip.py:
+
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
 *Install PIP on Windows:
